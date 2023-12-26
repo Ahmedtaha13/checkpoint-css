@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+background-color: rgb(113, 167, 137), 255, 115);
+height: 60px;
+z-index: 1000;
+}
+.dropdown1{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    z-index: 900;
+    
+
+}
+.dropdown1>li{
+flex: 1;
+list-style: none;
+height: 100%;
+width: 100%;
+justify-content: center;
+padding-top: 1%;
+display: flex;
+text-align: center;
+position: relative;
+font-size: 1.5rem;
+font-weight: bold;
+font-variant: small-caps;
+text-transform: capitalize;
+color: rgb(255, 255, 255);
+
+cursor: pointer;
+
+
+}
+.dropdown1>li:hover{
+background-color: rgb(128, 214, 174);
+
+}
+.dropdown2{
+position: absolute;
+background-color: antiquewhite;
+top: 50px;
+list-style: none;
+visibility: hidden;
+width: inherit;
+z-index:700 ;
+}
+
+#hover1:hover .dropdown2 {
+visibility: visible;
+
+}
+.dropdown2>li{
+    position: relative;
+height: 50px;
+padding-top: 10px;
+}
+.dropdown2>li:hover {
+    background-color: orangered;
+
+}
+.dropdown3 {
+    list-style: none;
+    position: absolute;
+    background-color: orange;
+    left:100%;
+    top: 8px;
+    visibility: hidden;
+
+}
+#hover2:hover .dropdown3{
+  
+    visibility: visible;
+    
+}
+body{
+    
+        background-image: url("https://images.unsplash.com/photo-1606498236504-030a628c0047?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8JUMzJUE5ZGl0ZXJ8ZW58MHx8MHx8fDA%3D");
+      
+height: 100vh;
+
+
+}
+section {
+ background-image: url(back.);
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+color: wheat;
+font-size: 3rem;
+height: 100%;
+
+
+}
+section:after {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+background-color: rgba(0, 0, 0, 0.355);
+filter: blur(5px);
+
+
+}
+.dropdown3 li:hover{
+    background-color: black;
+}
